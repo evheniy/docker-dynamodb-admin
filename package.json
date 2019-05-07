@@ -1,0 +1,23 @@
+{
+  "name": "docker-dynamodb-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "dynamodb-admin",
+    "docker:build": "docker build -t dynamodb-admin .",
+    "docker:run": "docker run -d --name dynamodb-admin -p 8001:8001 dynamodb-admin",
+    "docker:stop": "docker rm -f dynamodb-admin",
+    "docker:clean": "docker rmi -f dynamodb-admin"
+  },
+  "keywords": [
+    "docker",
+    "dynamodb",
+    "admin"
+  ],
+  "author": "Evheniy Bystrov",
+  "license": "MIT",
+  "dependencies": {
+    "dynamodb-admin": "^3.1.3"
+  }
+}
