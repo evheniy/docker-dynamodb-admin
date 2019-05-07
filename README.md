@@ -21,7 +21,7 @@ docker run -d --name dynamodb-admin -p 8001:8001 evheniy/docker-dynamodb-admin
 ```
 Or with parameters:
 ```
-docker run -d --name dynamodb-admin -p 3011:3011 -e DYNAMO_ENDPOINT=http://localhost:3010 -e PORT=3011 evheniy/docker-dynamodb-admin
+docker run -d --name dynamodb-admin -p 3011:3011 -e DYNAMO_ENDPOINT=http://localhost:3010 -e PORT=3011 -e DYNAMO_PORT=3010 evheniy/docker-dynamodb-admin
 ```
 
 ## Stop

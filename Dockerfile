@@ -21,8 +21,9 @@ COPY . /usr/src/app
 # Setting environments variables
 ENV DYNAMO_ENDPOINT http://localhost:8000
 ENV PORT 8001
+ENV DYNAMO_PORT 8000
 
-EXPOSE ${PORT}
+EXPOSE ${PORT} ${DYNAMO_PORT}
 
 # Main command
 CMD [ "npm", "start" ]
